@@ -13,7 +13,7 @@ This is a combination of the popup box confirmation react-native components for 
 
 # Usage
 
-## code
+## install
 ```javascript
 npm install react-native-popup-master --save
 ```
