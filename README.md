@@ -12,6 +12,11 @@ This is a combination of the popup box confirmation react-native components for 
 - Flexible change of content
 
 # Usage
+
+## code
+```javascript
+npm install react-native-popup-master --save
+```
 ## code
 ```javascript
 import React, { Component } from 'react';
@@ -24,8 +29,8 @@ import {
   ScrollView,
   TouchableHighlight
 } from 'react-native';
-import SubPopup from './subPopup'; 
-import Popup from '../components/popup';
+import SubPopup from './subPopup';  //yourself components,it's not necessary
+import Popup from 'react-native-popup-master';
 
 export default class PopupDemo extends Component { 
   constructor(props){
