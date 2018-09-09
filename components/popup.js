@@ -28,6 +28,7 @@ export default class popup extends Component{
       transparent: true,
       title: '提示', 
       headStyle: '',
+      headViewStyle:'',
       msg: '',
       innersWidth: null,
       innersHeight: null,
@@ -63,6 +64,7 @@ export default class popup extends Component{
           msg: options.msg || '',
           tHide: options.tHide || false,
           headStyle: options.headStyle || '',
+          headViewStyle: option.headViewStyle || '',
           modalVisible: true,
           innersHeight: options.height || null,
           innersWidth: options.width || null,
@@ -123,7 +125,7 @@ export default class popup extends Component{
 
             {
             !this.state.tHide &&
-              <View style={styles.headView}>
+              <View style={[styles.headView, this.state.headViewStyle]}>
                 <Text style={[
                  styles.headText,
                  this.state.headStyle]}>{this.state.title}</Text>
